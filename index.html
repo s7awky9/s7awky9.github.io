@@ -1,403 +1,569 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohamed Shawky</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mohamed Shawky</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Mohamed Shawky profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mohamed Shawky</h1>
-        <p class="section__text__p2">Android Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mohamed-ahmed-shawky-77b40b257/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/s7awky9'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>6+ years <br />Backend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Information Technology Manager<br />Information systems at ‎أكاديمية الشروق</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-I am a skilled developer specializing in Android and Flutter technologies. With a strong foundation in Java, Kotlin, and Dart, I excel at creating high-quality mobile applications for both Android and iOS platforms. My expertise includes designing intuitive user interfaces, optimizing performance, and integrating backend services. I leverage the latest tools and frameworks, such as Android Studio and Flutter, to deliver seamless and engaging app experiences. Passionate about technology, I am dedicated to continuously learning and improving my skills to stay ahead in the ever-evolving world of mobile development.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kotlin</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>php</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>UX/UI Designer</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>firebase</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.gif"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Restaurant Flutter App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://play.google.com/store/apps/details?id=com.wrteam.erestroSingleVender'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://play.google.com/store/apps/details?id=com.wrteam.erestroSingleVender'"
-              >
-                Live Demo
-              </button>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد شوقي | مطور برمجيات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
 
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="bracket">&lt;</span>
+                <span class="loader-text">محمد شوقي</span>
+                <span class="bracket">/&gt;</span>
             </div>
-          </div>
-           <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-4.png"
-                alt="Project 4"
-                class="project-img"
-              />
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
             </div>
-            <h2 class="experience-sub-title project-title">Dating Flutter App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/1roXw3iqZNS-cs_Kv7ogP6srSifkBWKYG/view?usp=sharing'"
-              >
-                Live Demo
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="bracket">&lt;</span>CodaraX<span class="bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">من أنا</a></li>
+                <li><a href="#skills" class="nav-link">المهارات</a></li>
+                <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
                 </button>
-        
+                <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Delivery Man flutter app</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://6am-storage.sgp1.digitaloceanspaces.com/Demo-APK/6Valley/14.7/6Valley%20Delivery%20Man%20V3.10.apk'"
-              >
-                Live Demo
-              </button>
-        
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/partsgo.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PartsGo</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://play.google.com/store/apps/details?id=com.dev.partsgo'"
-              >
-                Live app
-              </button>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    متاح للعمل الحر
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    مرحباً، أنا
+                    <span class="gradient-text">محمد شوقي</span>
+                </h1>
+                <div class="hero-typing animate-on-scroll">
+                    <span class="typing-prefix">أنا </span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    أقوم بتحويل الأفكار إلى تجارب رقمية مذهلة من خلال كتابة أكواد نظيفة وتصميمات إبداعية تجعل المستخدمين يعودون مراراً وتكراراً
+                </p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>استكشف أعمالي</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>تواصل معي</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">مشروع مكتمل</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">عميل سعيد</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">سنوات خبرة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">portfolio.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">الاسم</span>: <span class="code-string">"محمد شوقي"</span>,
+  <span class="code-property">المهارات</span>: [
+    <span class="code-string">"Java"</span>,
+    <span class="code-string">"Flutter"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"Laravel"</span>
+  ],
+  <span class="code-property">الشغف</span>: <span class="code-string">"بناء المستقبل"</span>,
+  <span class="code-method">يبدع</span>: () => <span class="code-keyword">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>مرر للأسفل</span>
+        </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="king67r2@gmail.com">Example@gmail.com</a></p>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;من أنا&gt;</span>
+                <h2 class="section-title">نظرة <span class="gradient-text">عامة</span></h2>
+                <p class="section-subtitle">تعرف عليّ أكثر</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="image-border"></div>
+                        <div class="experience-badge">
+                            <span class="exp-number">+7</span>
+                            <span class="exp-text">سنوات خبرة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3 class="about-heading">مطور برمجيات شغوف بالإبداع</h3>
+                    <p class="about-text">
+                        أنا مطور برمجيات متخصص في بناء تطبيقات الأندرويد و الويب الحديثة والمتجاوبة. أمتلك خبرة واسعة في تطوير الواجهات الأمامية والخلفية، وأسعى دائماً لتقديم حلول تقنية مبتكرة تلبي احتياجات العملاء وتتجاوز توقعاتهم.
+                    </p>
+                    <p class="about-text">
+                        أؤمن بأن البرمجة ليست مجرد كتابة أكواد، بل هي فن إبداعي يمزج بين المنطق والجمال لخلق تجارب رقمية استثنائية تُحدث فرقاً حقيقياً في حياة المستخدمين.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-rocket"></i></div>
+                            <div>
+                                <h4>أداء عالي</h4>
+                                <p>تطبيقات سريعة ومحسّنة</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div>
+                                <h4>تصميم جذاب</h4>
+                                <p>واجهات عصرية وأنيقة</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div>
+                                <h4>متجاوب بالكامل</h4>
+                                <p>يعمل على جميع الأجهزة</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>آمن وموثوق</h4>
+                                <p>أفضل معايير الأمان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>لنعمل معاً</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/mohamed-ahmed-shawky-77b40b257/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;المهارات&gt;</span>
+                <h2 class="section-title">المهارات <span class="gradient-text">التقنية</span></h2>
+                <p class="section-subtitle">الأدوات والتقنيات التي أتقنها</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><svg class="skill-svg kotlin-icon" viewBox="0 0 128 128" width="28" height="28"><defs><linearGradient id="kt-grad" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#E44857"/><stop offset="50%" stop-color="#C711E1"/><stop offset="100%" stop-color="#7F52FF"/></linearGradient></defs><path fill="url(#kt-grad)" d="M0 0h65.4L0 64.4zM0 128 128 0H64.6L0 63.7zM128 128 64.6 63.7 0 128z"/></svg></div>
+                    <h3>Kotlin</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><svg class="skill-svg flutter-icon" viewBox="0 0 128 128" width="28" height="28"><path fill="#40C4FF" d="M12.3 64.2L76.3 0h39.4L32 83.6zM76.3 128h39.4L83.4 95.7 64.1 115z"/><path fill="#40C4FF" d="M64.1 115l19.3-19.3L115.7 128H76.3z"/><path fill="#03A9F4" d="M32 83.6l32.1-32.2 51.6 51.7-19.3 19.3L76.3 128H64.1z"/><path fill="#01579B" d="M64.1 115l19.3-19.3 13.2 13.2z"/></svg></div>
+                    <h3>Flutter</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                    <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                    <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <h3>Laravel</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>قواعد البيانات</h3>
+                    <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                    <span class="skill-percent">78%</span>
+                </div>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Mohamed Shawky. All Rights Reserved.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;المشاريع&gt;</span>
+                <h2 class="section-title">أحدث <span class="gradient-text">أعمالي</span></h2>
+                <p class="section-subtitle">مجموعة مختارة من مشاريعي المميزة</p>
+            </div>
+            <div class="projects-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="app">تطبيقات</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="design">تصميم</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Laravel</span>
+                        </div>
+                        <h3 class="project-title">PartsGo - تطبيق موبايل</h3>
+                        <p class="project-desc">تطبيق موبايل متكامل لقطع الغيار الصناعية مع متجر إلكتروني وبحث ذكي وتتبع الطلبات وتجربة مستخدم سلسة</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">PartsGo - منصة ويب</h3>
+                        <p class="project-desc">منصة ويب لقطع الغيار الصناعية مع لوحة تحكم شاملة وكتالوج منتجات ونظام دفع آمن وإدارة المخزون</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">متجر إلكتروني متكامل</h3>
+                        <p class="project-desc">منصة تجارة إلكترونية حديثة مع نظام دفع آمن ولوحة تحكم شاملة وتجربة مستخدم سلسة</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
+                        <h3 class="project-title">تطبيق إدارة المهام</h3>
+                        <p class="project-desc">تطبيق ذكي لإدارة المهام مع إشعارات فورية وتتبع التقدم والتعاون الجماعي في الوقت الحقيقي</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                        <h3 class="project-title">تصميم واجهات تطبيق صحي</h3>
+                        <p class="project-desc">تصميم واجهات مستخدم عصرية لتطبيق صحي شامل مع تجربة مستخدم بديهية وألوان مريحة</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                        <h3 class="project-title">منصة تدوين تفاعلية</h3>
+                        <p class="project-desc">منصة تدوين حديثة مع محرر نصوص غني ونظام تعليقات تفاعلي ودعم كامل للغة العربية</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <h3 class="project-title">تطبيق محادثة فورية</h3>
+                        <p class="project-desc">تطبيق محادثة فورية مع دعم الغرف المتعددة ومشاركة الملفات والرسائل الصوتية</p>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة مباشرة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">D3.js</span>
+                        </div>
+                        <h3 class="project-title">لوحة تحكم تحليلية</h3>
+                        <p class="project-desc">لوحة تحكم تفاعلية لعرض وتحليل البيانات مع رسوم بيانية متقدمة وتقارير مفصلة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;تواصل&gt;</span>
+                <h2 class="section-title">تواصل <span class="gradient-text">معي</span></h2>
+                <p class="section-subtitle">هل لديك مشروع في ذهنك؟ لنتحدث!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3>لنبدأ مشروعك القادم</h3>
+                    <p>أنا دائماً متحمس لسماع أفكار جديدة والعمل على مشاريع مثيرة. لا تتردد في التواصل معي!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">البريد الإلكتروني</span>
+                                <a href="mailto:cody@example.com">cody@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">الموقع</span>
+                                <span>العالم العربي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="social-link" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required autocomplete="name">
+                        <label for="name">الاسم الكامل</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required autocomplete="email">
+                        <label for="email">البريد الإلكتروني</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">الموضوع</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">رسالتك</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="bracket">&lt;</span>محمد شوقي<span class="bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">صُنع بـ <i class="fas fa-heart"></i> وكثير من القهوة <i class="fas fa-mug-hot"></i></p>
+                <p class="footer-copyright">&copy; 2026 CodaraX. جميع الحقوق محفوظة.</p>
+            </div>
+            <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
